@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Berkeley Fall 2017</title>
     <script>
-        setTimeout(function(){window.location.reload(1)}, 2000);
+        setTimeout(function(){window.location.reload(true)}, 2000);
+        d = new Date();
+        document.getElementById("demo").innerHTML = d;
     </script>
 </head>
 <body style="font-size:20px;color:#003262;">
@@ -166,6 +168,7 @@
             <li>Live results at <a href="http://cubecomps.com/live.php?cid=2454">https://tinyurl.com/berkeleyfall</a> </li>
             <li>Heat information can be found at <a href="https://tinyurl.com/fallheatsheets">https://tinyurl.com/fallheatsheets</a> or posted around the hall</li>
             <li>Access this page live at <a href="https://tinyurl.com/berkeleyfallscreen">https://tinyurl.com/berkeleyfallscreen</a></li>
+            <li><p id="demo"></p></li>
         </ul>
     </h1>
     <h2 style="font-size:60px;padding:10px;margin:0;">
@@ -176,7 +179,7 @@
     <h2>
         We have called up to:
         <!--NAMES GO HERE-->
-        <b style="color:red;">A-J</b>
+        <b style="color:red;">A-M</b>
         <!--NAMES GO HERE-->
         for this event.
     </h2>
