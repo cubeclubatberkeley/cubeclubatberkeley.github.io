@@ -7,8 +7,8 @@ while true; do
 	echo "I see a modification time of $new_modify, last I saw was $last_modify"
 	if [ "$new_modify" -gt "$last_modify" ]; then
 		echo "We're gonna deploy now!"
-		url=`now-win --public`
-		now-win alias $url calcubeclub
+		url=`now --public`
+		now alias $url calcubeclub
 	fi
 	last_modify=$new_modify
 	sleep 1
